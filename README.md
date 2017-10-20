@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/amythz/DeepFlood/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/amythz/DeepFlood/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Algorithms which classify based on spatial and spectral characteristics of data are not well suited to
+capture the temporal information present in the data. For applications like flood monitoring, which shows great seasonal
+variation, mutli temporal classification algorithms are best suited. Advances in deep learning algorithms like Recurrent
+Neural Networks (RNN), Long Short Term Memory (LSTM) , Gated Recurrent Units (GRU),Neural Turing Machines (NTM) shows
+great promise in processing sequences of temporal remote sensing data. Along with traditional shape, texture and color
+features, a better representation of features can be obtained by training a traditional convolutional neural network
+(CNN). These features can be further used to train a RNN which better models the multi-temporal nature of the phenomena
+being studied.  The time required for training can be substantially reduced using smart faster algorithms for
+convolution operations and matrix multiplication and also by using high performance computing facilities. The main
+objective of this research is to use deep learning technologies to improve classification accuracy for flood monitoring
+which is infact a geospatial phenomena showing temporal variations
