@@ -1,0 +1,7 @@
+ $ ffmpeg -i flood_number_place_date.mp4 -vf fps=1 flood_number_place_date_%d.png
+
+convert image.png -crop 28x28 \-set filename:tile "%[fx:page.x/28+1]_%[fx:page.y/28+1]" \+repage +adjoin "image_tile_%[filename:tile].png"  
+
+
+convert label_image.png -crop 28x28 \-set filename:tile "%[fx:page.x/28+1]_%[fx:page.y/28+1]" \ +repage +adjoin "label_image_tile_%[filename:tile].png"
+

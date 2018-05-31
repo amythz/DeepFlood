@@ -1,0 +1,48 @@
+#!/bin/bash 
+
+mkdir lab 
+ 
+baseName="flood_number_place_date_"
+index="0"
+ext=".png"
+numberOfFiles=315
+
+for (( c=1; c<=$numberOfFiles; c++ ))
+do  
+   index=$c
+   echo "Welcome $c  "
+   fileName=$baseName$index$ext
+   echo $fileName
+
+   cp $fileName lab
+   cd lab 
+   #  PATH=$PATH:/home/neo/Matlab2015/bin
+   cp  $fileName image.png
+   rm  $fileName
+
+    # Run Matlab code to process image.png here. preProcessImage.m
+    #read -p "Run preProcessImage.m in Matlab and Press enter to continue " 
+   
+   matlab  -nodisplay -nosplash -r "preProcessImage;exit"
+ 
+   trainImage=$baseName$index"Train"$ext
+   rangeFiltImage=$baseName$index"RangeFilt"$ext
+   BW_Image=$baseName$index"BW"$ext
+   
+   # cp imageBW.png $BW_Image
+   cp imageRangefilt.png $rangeFiltImage
+   cp imageTrainImage.png $trainImage
+   cp image.png $fileName
+
+   rm imageBW.png 
+   rm imageRangefilt.png 
+   rm imageTrainImage.png 
+
+
+   cd .. 
+   echo "Finished processing file $c. $fileName  "
+   # read -p "Press enter to continue" 
+done
+
+
+
