@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 mkdir lab 
+
  
 baseName="flood_number_place_date_"
 index="0"
