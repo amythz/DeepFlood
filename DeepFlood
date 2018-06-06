@@ -1,5 +1,5 @@
 #!/bin/bash 
-
+# Not used anymore : just use createLabels.m 
 mkdir lab 
 
  
