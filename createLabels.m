@@ -117,18 +117,3 @@ end
 
 
 
-% 
-% for i= 1: nFrames
-%     dirName=int2str(i)
-%     mkdir(dirName)
-%     imageName=strcat('flood_number_place_date_',int2str(i),'.png');
-%     copyfile(imageName,dirName)
-%     cd(dirName)
-%       image=imread(imageName);
-%             imshow(imcrop(image,[1,1,28,28]))
-%             size(image)
-%             cd .. 
-%     
-% end
-
-
