@@ -1,0 +1,10 @@
+#!/bin/bash
+((i=1))
+for FILENAME in *; 
+do 
+echo flooded_$i;
+mv $FILENAME flooded_$i.png;
+((i=i+1))
+done 
+
+
